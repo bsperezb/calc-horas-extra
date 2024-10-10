@@ -1,0 +1,39 @@
+{
+  "name": "Vue.js Dev Container - HE",
+  "runArgs": ["--name", "cal-horas-extrax"],
+  "image": "node:22", // Usa la imagen oficial de Node.js 22
+  "postCreateCommand": "npm install",
+  // "postStartCommand": "npm run serve",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vue.volar",
+        "dbaeumer.vscode-eslint", // Soporte de ESLint
+        "esbenp.prettier-vscode", // Prettier para formateo
+        "shardulm94.trailing-spaces", // Espacios en blanco al final del archivo
+        "naumovs.color-highlight", // Resaltado de colores
+        "DavidAnson.vscode-markdownlint", // Linter para Markdown (opcional)
+        "Gruntfuggly.todo-tree", // Todo Tree para gestionar tareas
+        "svg-scorpio.svg-preview", // Vista previa de archivos SVG
+        "cssho.vscode-svgviewer", // Soporte de SVG
+        "hediet.vscode-imagelinter", // Vista previa de imágenes
+        "mhutchie.git-graph", // Visualización de gráficos de Git
+        "ms-vscode.color-picker", // Selector de colores
+        "holashift.vue-snippets", // Vue VSCode Snippets
+        "GitHub.vscode-github-actions", // GitHub Actions support
+        "jock.svg", // SVG extension
+        "rangav.vscode-thunder-client", // Thunder Client for API testing
+        "anseki.vscode-color", // Color Helper extension
+        "EditorConfig.EditorConfig" // EditorConfig support
+      ]
+    }
+  },
+  "forwardPorts": [5173],
+  "shutdownAction": "stopContainer",
+  "portsAttributes": {
+    "5173": {
+      "label": "Vue.js Dev Server",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
