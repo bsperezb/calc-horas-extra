@@ -10,10 +10,16 @@ insert_final_newline = true
 
 # Matches multiple files with brace expansion notation
 # Set default
-[*.{js,vue,less}]
+[*.{js,less}]
 charset = utf-8
 indent_style = space
 indent_size = 4
+
+[*.{vue}]
+charset = utf-8
+indent_style = space
+indent_size = 2
+
 
 # Matches the exact files either package.json or .travis.yml
 [{package.json,.travis.yml}]
