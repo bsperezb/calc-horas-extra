@@ -31,7 +31,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { useMenuStore } from '@/stores/menu'
+// import { useMenuStore } from '@/stores/menu'
 import IconCalc from '@/components/icons/IconCalc.vue'
 
 export default defineComponent({
