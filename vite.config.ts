@@ -5,12 +5,14 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/calc-horas-extra/',
   plugins: [
     vue(),
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': '/src'
+      // '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   }
 })
