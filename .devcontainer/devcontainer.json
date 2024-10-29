@@ -24,7 +24,8 @@
         "jock.svg", // SVG extension
         "rangav.vscode-thunder-client", // Thunder Client for API testing
         "anseki.vscode-color", // Color Helper extension
-        "EditorConfig.EditorConfig" // EditorConfig support
+        "EditorConfig.EditorConfig", // EditorConfig support
+        "donjayamanne.githistory"
       ]
     }
   },
