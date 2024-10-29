@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import AsideMenu from '@/components/Menu/IndexMenu.vue'
+import FormLuis from '@/components/FormLuis.vue'
 </script>
 n
 
@@ -26,6 +27,7 @@ n
   <aside-menu></aside-menu>
 
   <RouterView class="main-view" />
+  <FormLuis></FormLuis> 
 </template>
 <style>
 * {
